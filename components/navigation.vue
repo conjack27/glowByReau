@@ -1,20 +1,20 @@
 <template>
-  <nav class="navigation">
-    <div class="navigation__logo">Logo</div>
-    <div class="navigation__menu">
-      <div class="navigation__menu-icon" @click="toggleMenu">
+  <nav class="nav">
+    <div class="nav__logo mb">Logo</div>
+    <div class="nav__menu">
+      <div class="nav__menu-icon" @click="toggleMenu">
         <span></span>
         <span></span>
         <span></span>
       </div>
       <ul
-        class="navigation__menu-items"
-        :class="{ 'navigation__menu-items--open': isMenuOpen }"
+        class="nav__menu-items"
+        :class="{ 'nav__menu-items--open': isMenuOpen }"
       >
-        <li class="navigation__menu-item">About</li>
-        <li class="navigation__menu-item">Behandeling</li>
-        <li class="navigation__menu-item">Producten</li>
-        <li class="navigation__menu-item">Contact</li>
+        <li class="nav__menu-item">About</li>
+        <li class="nav__menu-item">Behandeling</li>
+        <li class="nav__menu-item">Producten</li>
+        <li class="nav__menu-item">Contact</li>
       </ul>
     </div>
   </nav>
@@ -36,85 +36,102 @@
 </script>
 
 <style lang="scss">
-  .navigation {
+  @import '../assets/css/main.scss';
+  .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: #f2f2f2;
-  }
-
-  .navigation__logo {
-    font-weight: bold;
-  }
-
-  .navigation__menu {
+    background-color: $beige;
     position: relative;
-  }
 
-  .navigation__menu-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 24px;
-    height: 20px;
-    cursor: pointer;
-  }
-
-  .navigation__menu-icon span {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #333;
-  }
-
-  .navigation__menu-items {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 1rem;
-    background-color: #f2f2f2;
-    list-style: none;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-  }
-
-  .navigation__menu-items--open {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(100%);
-  }
-
-  .navigation__menu-item {
-    margin-bottom: 1rem;
-  }
-
-  @media (min-width: 600px) {
-    .navigation__menu {
-      display: flex;
-      align-items: center;
+    @media (min-width: 600px) {
+      flex-direction: column;
     }
 
-    .navigation__menu-items {
-      position: static;
+    &__logo {
+      font-weight: bold;
+      @media (min-width: 600px) {
+      }
+    }
+
+    &__menu {
+      @media (min-width: 600px) {
+        display: flex;
+        align-items: center;
+        outline: 1px solid black;
+        width: 100%;
+      }
+    }
+
+    &__menu-icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 24px;
+      height: 20px;
+      cursor: pointer;
+
+      @media (min-width: 600px) {
+        display: none;
+      }
+    }
+
+    &__menu-icon span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #333;
+    }
+
+    &__menu-items {
+      position: absolute;
+      top: 15px;
+      left: 0;
+      width: 92%;
+      padding: 1rem;
+      color: $white;
+      list-style: none;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      background-color: $beige;
+
+      @media (min-width: 600px) {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        padding: 0;
+        display: flex;
+        outline: 1px solid white;
+        width: 100%;
+        justify-content: space-between;
+        // change to margin horizontal mixin
+        margin: 0 15%;
+      }
+    }
+
+    &__menu-items--open {
       opacity: 1;
       visibility: visible;
-      transform: none;
-      background-color: transparent;
-      padding: 0;
-      display: flex;
+      transform: translateY(10%);
     }
 
-    .navigation__menu-item {
-      margin-right: 1rem;
-      opacity: 0.8;
-      transition: opacity 0.3s ease;
-    }
+    &__menu-item {
+      margin-bottom: 1rem;
 
-    .navigation__menu-item:hover {
-      opacity: 1;
+      @media (min-width: 600px) {
+        margin-right: 1rem;
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+        font-size: 32px;
+        text-transform: uppercase;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
     }
   }
 </style>

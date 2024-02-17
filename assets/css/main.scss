@@ -1,3 +1,32 @@
+// Color variables
+
+$green: #77785f;
+$beige: #beb2a1;
+$grey: #deddd8;
+$white: #e7e6e2;
+$brown: #847463;
+
+// Add a class to the body element to make the page at least fit the view height of the screen
+body {
+  min-height: 100vh;
+}
+
+// Add a class to the footer element to position it at the bottom of the screen
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+// Add a class to the menu element to position it at the top of the screen
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 // Global margin and spacing styles
 $spacing-unit: 8px;
 
@@ -133,8 +162,57 @@ $spacing-unit: 8px;
   @include padding(0, 0, 0, $value);
 }
 
-// Apply margin and padding utility classes to elements
+.main {
+  background-color: $white;
+}
+
 .page {
   @include margin-all($spacing-unit);
   @include padding-all($spacing-unit);
+}
+
+// Base styling for paragraphs and headings
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: $grey;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: $brown;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
 }
