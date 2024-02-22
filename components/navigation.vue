@@ -1,6 +1,6 @@
 <template>
   <nav class="nav">
-    <div class="nav__logo mb">Logo</div>
+    <div class="nav__logo mb"><NuxtLink to="/">Logo</NuxtLink></div>
     <div class="nav__menu">
       <div class="nav__menu-icon" @click="toggleMenu">
         <span></span>
@@ -11,10 +11,20 @@
         class="nav__menu-items"
         :class="{ 'nav__menu-items--open': isMenuOpen }"
       >
-        <li class="nav__menu-item">About</li>
-        <li class="nav__menu-item">Behandeling</li>
-        <li class="nav__menu-item">Producten</li>
-        <li class="nav__menu-item">Contact</li>
+        <li class="nav__menu-item">
+          <NuxtLink class="nav__menu-link" to="about">About</NuxtLink>
+        </li>
+        <li class="nav__menu-item">
+          <NuxtLink class="nav__menu-link" to="behandelingen"
+            >Behandelingen</NuxtLink
+          >
+        </li>
+        <li class="nav__menu-item">
+          <NuxtLink class="nav__menu-link" to="producten">Producten</NuxtLink>
+        </li>
+        <li class="nav__menu-item">
+          <NuxtLink class="nav__menu-link" to="contact">Contact</NuxtLink>
+        </li>
       </ul>
     </div>
   </nav>
@@ -131,6 +141,16 @@
         &:hover {
           opacity: 1;
         }
+      }
+    }
+
+    &__menu-link {
+      color: $brown;
+      text-decoration: none;
+      font-size: 24px;
+      text-transform: uppercase;
+
+      @media (min-width: 600px) {
       }
     }
   }

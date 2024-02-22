@@ -10,14 +10,15 @@
       <h2 class="treatment__heading" @click="selectedSection = 'wax'">Wax</h2>
     </div>
     <div class="treatment__content">
-      <div v-if="selectedSection === 'beauty'" class="treatment__section">
-        <h2>beauty</h2>
-      </div>
-      <div v-if="selectedSection === 'brows'" class="treatment__section">
-        <h2>brows</h2>
-      </div>
-      <div v-if="selectedSection === 'wax'" class="treatment__section">
-        <h2>wax</h2>
+      <div
+        :key="selectedSection"
+        class="treatment__section fade"
+        :class="{
+          'fade-enter': selectedSection,
+          'fade-leave-to': !selectedSection,
+        }"
+      >
+        <h2>{{ selectedSection }}</h2>
       </div>
     </div>
   </div>
@@ -66,13 +67,8 @@
       }
       &.fade-enter,
       &.fade-leave-to {
-        opacity: 0;
-      }
-      &.fade-enter {
+        opacity: 1;
         display: block;
-      }
-      &.fade-leave-to {
-        display: none;
       }
     }
   }
