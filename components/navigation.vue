@@ -1,6 +1,18 @@
 <template>
-  <nav class="nav">
-    <div class="nav__logo mb"><NuxtLink to="/">Logo</NuxtLink></div>
+  <nav
+    class="nav"
+    :class="{ 'nav--scrolled': isScrolled, 'nav--transparent': !isScrolled }"
+  >
+    <NuxtLink class="nav__logo" to="/">
+      <img
+        class="nav__logo--mobile"
+        src="../assets/images/logo-large-white.svg"
+      />
+      <img
+        class="nav__logo--desktop"
+        src="../assets/images/logo-small-white.svg"
+      />
+    </NuxtLink>
     <div class="nav__menu">
       <div class="nav__menu-icon" @click="toggleMenu">
         <span></span>
@@ -35,12 +47,24 @@
     data() {
       return {
         isMenuOpen: false,
+        isScrolled: false,
       };
     },
     methods: {
       toggleMenu() {
         this.isMenuOpen = !this.isMenuOpen;
       },
+      handleScroll() {
+        this.isScrolled = window.scrollY > 0;
+      },
+    },
+    mounted() {
+      // Attach the scroll event listener when the component is mounted
+      window.addEventListener('scroll', this.handleScroll);
+    },
+    beforeDestroy() {
+      // Remove the scroll event listener when the component is destroyed
+      window.removeEventListener('scroll', this.handleScroll);
     },
   };
 </script>
@@ -51,17 +75,59 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 8px;
     background-color: $beige;
     position: relative;
+    transition: background-color 0.2s ease;
 
     @media (min-width: 600px) {
       flex-direction: column;
+      position: fixed;
+      width: 100%;
+
+      &--transparent {
+        background-color: transparent;
+      }
+
+      &--scrolled {
+        background-color: $brown;
+
+        .nav__menu-link {
+          color: $white;
+        }
+
+        .nav__menu {
+          border-bottom: none;
+          border-top: 1px solid $white;
+        }
+      }
     }
 
     &__logo {
-      font-weight: bold;
+      width: 200px;
+      height: auto;
+      margin-left: 25%;
+
       @media (min-width: 600px) {
+        width: 50px;
+        margin-left: 0;
+      }
+    }
+
+    &__logo--mobile {
+      display: block;
+      @media (min-width: 600px) {
+        display: none;
+      }
+    }
+
+    &__logo--desktop {
+      display: none;
+      @media (min-width: 600px) {
+        display: block;
+        width: 30px;
+        height: auto;
+        padding-bottom: 8px;
       }
     }
 
@@ -69,8 +135,9 @@
       @media (min-width: 600px) {
         display: flex;
         align-items: center;
-        outline: 1px solid black;
         width: 100%;
+        border-top: 1px solid $brown;
+        border-bottom: 1px solid $brown;
       }
     }
 
@@ -96,7 +163,7 @@
 
     &__menu-items {
       position: absolute;
-      top: 15px;
+      top: 3px;
       left: 0;
       width: 92%;
       padding: 1rem;
@@ -114,11 +181,11 @@
         transform: none;
         padding: 0;
         display: flex;
-        outline: 1px solid white;
         width: 100%;
         justify-content: space-between;
         // change to margin horizontal mixin
         margin: 0 15%;
+        background-color: transparent;
       }
     }
 
@@ -151,6 +218,9 @@
       text-transform: uppercase;
 
       @media (min-width: 600px) {
+        &.router-link-active {
+          color: #70604f;
+        }
       }
     }
   }

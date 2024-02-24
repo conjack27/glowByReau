@@ -9,6 +9,12 @@ $brown: #847463;
 // Add a class to the body element to make the page at least fit the view height of the screen
 body {
   min-height: 100vh;
+  margin: 0;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 // Add a class to the footer element to position it at the bottom of the screen
@@ -215,4 +221,9 @@ h5 {
 
 h6 {
   font-size: 16px;
+}
+
+.content {
+  max-width: 1800px;
+  margin: 0 auto;
 }

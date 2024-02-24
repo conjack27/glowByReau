@@ -1,42 +1,143 @@
 <template>
   <footer class="foot">
-    <nav class="foot__nav">
+    <h3 class="foot__heading">Enhancing the beauty you were born with</h3>
+    <div class="foot__blocks">
       <ul class="foot__list">
-        <li class="foot__item"><a href="#" class="foot__link">Home</a></li>
-        <li class="foot__item"><a href="#" class="foot__link">About</a></li>
-        <li class="foot__item"><a href="#" class="foot__link">Services</a></li>
-        <li class="foot__item"><a href="#" class="foot__link">Contact</a></li>
+        <li class="foot__item">
+          <NuxtLink class="foot__link" to="behandelingen"
+            >Behandelingen</NuxtLink
+          >
+        </li>
+        <li class="foot__item">
+          <NuxtLink class="foot__link" to="producten">Producten</NuxtLink>
+        </li>
+        <li class="foot__item">
+          <NuxtLink class="foot__link" to="contact">Contact</NuxtLink>
+        </li>
+        <li class="foot__item">
+          <NuxtLink class="foot__link" to="about">Over</NuxtLink>
+        </li>
       </ul>
-    </nav>
+      <div class="foot__contact">
+        <div class="foot__contact-block">
+          <p class="foot__contact-block-heading">Contact</p>
+          <p class="foot__contact-block-detail">T: +31 6 52344487</p>
+          <p class="foot__contact-block-detail">robinruijs@gmail.com</p>
+        </div>
+        <div class="foot__contact-block">
+          <p class="foot__contact-block-heading">Adres</p>
+          <p class="foot__contact-block-detail">Gooisekant 276</p>
+          <p class="foot__contact-block-detail">1104 MM</p>
+          <p class="foot__contact-block-detail">Amsterdam</p>
+        </div>
+      </div>
+    </div>
+    <i class="foot__social-icon instagram"></i>
   </footer>
 </template>
 
 <style lang="scss">
   .foot {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 400px;
+    bottom: 0;
+    background-color: $beige;
+    opacity: 1;
+    padding: 8px;
+    margin: 8px;
 
     @media (min-width: 600px) {
       // Add desktop styles here
     }
 
-    &__nav {
-      // Add navigation styles here
-      margin-top: auto;
-      flex: 1;
+    &__heading {
+      font-size: 24px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: $brown;
+      text-align: center;
+      margin: 16px 0;
+    }
+
+    &__blocks {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      width: 100%;
+      max-width: 800px;
+      margin-top: 16px;
+
+      @media (min-width: 600px) {
+      }
     }
 
     &__list {
-      // Add list styles here
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 16px;
+      margin-top: 27px;
+
+      @media (min-width: 600px) {
+      }
     }
 
     &__item {
-      // Add list item styles here
+      margin: 16px 0;
+
+      @media (max-width: 600px) {
+      }
     }
 
     &__link {
-      // Add link styles here
+      font-size: 24px;
+      text-transform: uppercase;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: $brown;
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover {
+        color: white;
+      }
+    }
+
+    &__contact {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      @media (max-width: 600px) {
+      }
+    }
+
+    &__contact-block {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      @media (max-width: 600px) {
+      }
+    }
+
+    &__contact-block-heading {
+      font-size: 24px;
+      color: $brown;
+      margin-bottom: 0px;
+      text-transform: uppercase;
+      text-align: right;
+      margin-top: 0px;
+    }
+
+    &__contact-block-detail {
+      text-align: right;
+      font-size: 18px;
+      color: $brown;
+      margin: 0;
     }
   }
 </style>

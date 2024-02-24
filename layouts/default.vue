@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <navigation />
-    <div class="page">
+    <div class="content">
       <div>
         <slot>
           <p>This is the default content for the slot.</p>
