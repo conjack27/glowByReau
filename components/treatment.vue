@@ -2,14 +2,20 @@
   <div class="showhide">
     <div class="showhide__header" @click="toggleContent">
       <h3 class="showhide__heading">{{ title }}</h3>
-      <p class="showhide__time">{{ time }}</p>
       <span class="showhide__price">{{ price }}</span>
-      <i :class="['showhide__arrow', { 'showhide__arrow--up': isOpen }]"></i>
+      <p class="showhide__time">{{ time }}</p>
+      <i
+        :class="[
+          'showhide__arrow',
+          { 'showhide__arrow--up': isOpen },
+          { 'showhide__arrow--hide': noExtraContent },
+        ]"
+      ></i>
     </div>
     <transition name="slide">
       <div
         class="showhide__content"
-        :style="{ maxHeight: isOpen ? '200px' : '0' }"
+        :style="{ maxHeight: isOpen ? '300px' : '0' }"
       >
         <p class="showhide__text">
           {{ text }}
@@ -36,7 +42,11 @@
       },
       text: {
         type: String,
-        required: true,
+        required: false,
+      },
+      noExtraContent: {
+        type: Boolean,
+        required: false,
       },
     },
     data() {
@@ -56,32 +66,64 @@
   @import '../assets/css/variables.scss';
 
   .showhide {
-    // Your styles for the show/hide component container
-
+    @media (min-width: 600px) {
+      flex: 0 1 33%;
+    }
     &__header {
-      // Your styles for the header section
       cursor: pointer;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
+      padding: 8px;
     }
 
     &__heading {
       font-size: 18px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
       margin: 0;
       color: $brown;
       flex: 0 1 50%;
     }
 
+    &__price {
+      font-size: 18px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: $brown;
+      flex: 0 1 50%;
+      text-align: end;
+    }
+
+    &__time {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 18px;
+      color: $brown;
+      margin-top: 4px;
+    }
+
     &__arrow {
-      // Your styles for the arrow
-      width: 20px;
-      height: 20px;
+      width: 30px;
+      height: 30px;
       background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10l5 5 5-5"/></svg>');
       background-size: contain;
       background-repeat: no-repeat;
+      background-position: center;
       transition: transform 0.3s;
+      margin-top: -10px;
+    }
+
+    &__arrow--hide {
+      display: none;
+    }
+
+    &__content {
+      margin: 8px;
+    }
+
+    &__text {
+      margin: 0;
     }
 
     &__arrow--up {
@@ -89,8 +131,8 @@
     }
 
     &__content {
-      overflow: hidden; // Ensure the content doesn't overflow
-      transition: max-height 0.1s ease-in; // Use max-height for the transition
+      overflow: hidden;
+      transition: max-height 0.1s ease-in;
     }
 
     .slide-enter-active,

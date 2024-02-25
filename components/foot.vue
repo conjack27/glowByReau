@@ -22,7 +22,13 @@
         <div class="foot__contact-block">
           <p class="foot__contact-block-heading">Contact</p>
           <p class="foot__contact-block-detail">T: +31 6 52344487</p>
-          <p class="foot__contact-block-detail">robinruijs@gmail.com</p>
+          <p class="foot__contact-block-detail">
+            <a
+              class="foot__contact-block-detail-link"
+              href="mailto:robinruijs@gmail.com"
+              >robinruijs@gmail.com</a
+            >
+          </p>
         </div>
         <div class="foot__contact-block">
           <p class="foot__contact-block-heading">Adres</p>
@@ -138,6 +144,15 @@
       font-size: 18px;
       color: $brown;
       margin: 0;
+    }
+
+    &__contact-block-detail-link {
+      color: $brown;
+      text-decoration: none;
+
+      &:hover {
+        color: $white;
+      }
     }
   }
 </style>

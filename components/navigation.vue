@@ -173,7 +173,6 @@
       visibility: hidden;
       transition: all 0.3s ease;
       background-color: $beige;
-      border-bottom: 2px solid white;
 
       @media (min-width: 600px) {
         position: static;
