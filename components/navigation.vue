@@ -70,7 +70,7 @@
 </script>
 
 <style lang="scss">
-  @import '../assets/css/main.scss';
+  @import '../assets/css/variables.scss';
   .nav {
     display: flex;
     justify-content: space-between;
@@ -165,7 +165,7 @@
       position: absolute;
       top: 3px;
       left: 0;
-      width: 92%;
+      width: 100%;
       padding: 1rem;
       color: $white;
       list-style: none;
@@ -173,6 +173,7 @@
       visibility: hidden;
       transition: all 0.3s ease;
       background-color: $beige;
+      border-bottom: 2px solid white;
 
       @media (min-width: 600px) {
         position: static;

@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/google-fonts'],
   styleResources: {
-    scss: ['~/assets/css/main.scss'],
+    scss: ['/assets/css/main.scss', '~/assets/css/fuckyou.scss'],
   },
   css: ['~/assets/css/main.scss'],
   router: {

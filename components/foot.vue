@@ -37,6 +37,7 @@
 </template>
 
 <style lang="scss">
+  @import '../assets/css/variables.scss';
   .foot {
     display: flex;
     justify-content: center;
@@ -47,7 +48,6 @@
     background-color: $beige;
     opacity: 1;
     padding: 8px;
-    margin: 8px;
 
     @media (min-width: 600px) {
       // Add desktop styles here

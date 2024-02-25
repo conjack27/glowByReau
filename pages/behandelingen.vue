@@ -16,7 +16,18 @@
           class="treatment__section"
           v-show="selectedSection === 'beauty'"
         >
-          <h2>Beauty Content</h2>
+          <h2>Beauty</h2>
+          <p class="treatment__section-intro">
+            Bij alle gezichtsbehandelingen worden de producten aangepast op
+            basis van jouw huidtype en wens!
+          </p>
+          <treatment
+            title="Mini glow"
+            price="€45"
+            time="45 mins"
+            text="De hoornlaag wordt met deze behandeling verdund.
+Dode huidcellen verdwijnen en de huid krijgt een mooiere kleur. Er ontstaat een betere doorbloeding en opname van werkzame stoffen."
+          ></treatment>
         </div>
       </transition>
       <transition name="fade">
@@ -42,7 +53,11 @@
 </template>
 
 <script>
+  import Treatment from '~/components/treatment.vue';
   export default {
+    components: {
+      Treatment,
+    },
     data() {
       return {
         selectedSection: 'beauty',
@@ -53,6 +68,7 @@
 
 <style lang="scss">
   .treatment {
+    min-height: 600px;
     &__headings {
       display: flex;
       justify-content: space-between;

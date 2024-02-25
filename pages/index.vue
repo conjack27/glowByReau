@@ -53,7 +53,7 @@
 </template>
 
 <style lang="scss">
-  @import '../assets/css/main.scss';
+  @import '../assets/css/variables.scss';
   .home {
     &__hero {
       background-size: cover;

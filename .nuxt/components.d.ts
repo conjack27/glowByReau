@@ -3,6 +3,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     'Foot': typeof import("../components/foot.vue")['default']
     'Navigation': typeof import("../components/navigation.vue")['default']
+    'Treatment': typeof import("../components/treatment.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
     'NuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
     'NuxtErrorBoundary': typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
@@ -25,6 +26,7 @@ declare module 'vue' {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyFoot': typeof import("../components/foot.vue")['default']
     'LazyNavigation': typeof import("../components/navigation.vue")['default']
+    'LazyTreatment': typeof import("../components/treatment.vue")['default']
     'LazyNuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
     'LazyNuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
     'LazyNuxtErrorBoundary': typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
@@ -50,6 +52,7 @@ declare module 'vue' {
 
 export const Foot: typeof import("../components/foot.vue")['default']
 export const Navigation: typeof import("../components/navigation.vue")['default']
+export const Treatment: typeof import("../components/treatment.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
 export const NuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
@@ -72,6 +75,7 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyFoot: typeof import("../components/foot.vue")['default']
 export const LazyNavigation: typeof import("../components/navigation.vue")['default']
+export const LazyTreatment: typeof import("../components/treatment.vue")['default']
 export const LazyNuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
 export const LazyNuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
 export const LazyNuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
