@@ -402,6 +402,7 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
       @media (min-width: 600px) {
         padding-left: 40px;
         flex-direction: column;
+        width: 250px;
         min-width: 250px;
         margin-top: 100px;
         justify-content: flex-start;

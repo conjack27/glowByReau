@@ -45,8 +45,8 @@
           </p>
         </div>
       </div>
-      <nuxtLiink to="Behandelingen" class="home__content-btn"
-        >Alle behandelingen</nuxtLiink
+      <nuxtLink to="behandelingen" class="home__content-btn"
+        >Alle behandelingen</nuxtLink
       >
     </div>
   </div>

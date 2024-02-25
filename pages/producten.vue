@@ -62,6 +62,7 @@
       height: 300px;
 
       @media (min-width: 600px) {
+        height: 600px;
       }
     }
 
@@ -85,6 +86,12 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+
+      @media (min-width: 600px) {
+        flex-direction: row;
+        padding: 50px;
+        justify-content: space-around;
+      }
     }
 
     &__image {
