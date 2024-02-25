@@ -1,13 +1,27 @@
 <template>
   <div class="treatment">
     <div class="treatment__headings">
-      <h2 class="treatment__heading" @click="selectedSection = 'beauty'">
+      <h2
+        class="treatment__heading"
+        :class="{ 'active-heading': selectedSection === 'beauty' }"
+        @click="selectedSection = 'beauty'"
+      >
         Beauty
       </h2>
-      <h2 class="treatment__heading" @click="selectedSection = 'brows'">
+      <h2
+        class="treatment__heading"
+        :class="{ 'active-heading': selectedSection === 'brows' }"
+        @click="selectedSection = 'brows'"
+      >
         Brows & Lashes
       </h2>
-      <h2 class="treatment__heading" @click="selectedSection = 'wax'">Wax</h2>
+      <h2
+        class="treatment__heading"
+        :class="{ 'active-heading': selectedSection === 'wax' }"
+        @click="selectedSection = 'wax'"
+      >
+        Wax
+      </h2>
     </div>
     <div class="treatment__content">
       <transition name="fade">
@@ -26,54 +40,54 @@
               title="Mini glow"
               price="€45"
               time="45 mins"
-              text="•	Reiniging&nbsp;
-•	Peeling&nbsp;
-•	Epileren/ waxen wenkbrauwen&nbsp;
-•	Masker&nbsp;
-•	Serum&nbsp;
-•	Eindverzorging
+              text="• Reiniging  
+• Peeling
+• Epileren/ waxen wenkbrauwen
+• Masker
+• Serum
+• Eindverzorging
 "
             ></treatment>
             <treatment
               title="Basic"
               price="€59"
               time="60 mins"
-              text="•	Reiniging
-•	Peeling
-•	Reinigende massage
-•	Onzuiverheden verwijderen
-•	Serum
-•	Masker
-•	Eindverzorging
+              text="• Reiniging
+• Peeling
+• Reinigende massage
+• Onzuiverheden verwijderen
+• Serum
+• Masker
+• Eindverzorging
 "
             ></treatment>
             <treatment
               title="Compleet"
               price="€75"
               time="90 mins"
-              text="•	Reiniging 
-•	Peeling
-•	Epileren/ waxen wenkbrauwen
-•	Reinigende massage
-•	Onzuiverheden verwijderen
-•	Gezicht-, hals- & nekmassage 
-•	Serum
-•	Masker
-•	Eindverzorging
+              text="• Reiniging 
+• Peeling
+• Epileren/ waxen wenkbrauwen
+• Reinigende massage
+• Onzuiverheden verwijderen
+• Gezicht-, hals- & nekmassage 
+• Serum
+• Masker
+• Eindverzorging
 "
             ></treatment>
             <treatment
               title="Men treatment"
               price="€65"
               time="75 mins"
-              text="•	Reiniging
-•	Peeling
-•	Reinigende massage 
-•	Onzuiverheden verwijderen 
-•	Gezicht- hals- & nekmassage 
-•	Serum
-•	Masker
-•	Eindverzorging
+              text="• Reiniging
+• Peeling
+• Reinigende massage 
+• Onzuiverheden verwijderen 
+• Gezicht- hals- & nekmassage 
+• Serum
+• Masker
+• Eindverzorging
 "
             ></treatment>
             <treatment
@@ -81,14 +95,14 @@
               price="€65"
               time="75 mins"
               text="Een ontgiftende en zuiverende behandeling met behulp van zilverpoeder. Geschikt voor de onreine/acné huid.
-•	Reiniging
-•	Peeling
-•	Reinigende massage
-•	Onzuiverheden verwijderen
-•	Serum
-•	Detox masker
-•	Ph balancer 
-•	Eindverzorging
+• Reiniging
+• Peeling
+• Reinigende massage
+• Onzuiverheden verwijderen
+• Serum
+• Detox masker
+• Ph balancer 
+• Eindverzorging
 "
             ></treatment>
             <treatment
@@ -98,15 +112,15 @@
               text="De hoornlaag wordt met deze behandeling verdund.
 Dode huidcellen verdwijnen en de huid krijgt een mooiere kleur. Er ontstaat een betere doorbloeding en opname van werkzame stoffen.
 De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De huid ziet er egaler en jonger uit met verfijnde poriën.
-•	Reiniging
-•	Peeling
-•	Reinigende massage 
-•	Onzuiverheden verwijderen 
-•	Skin prep 
-•	Acid Peel (verschillende beschikbaar)
-•	Neutralisator
-•	Eindverzorging
-•	Solar skin shield SPF 30
+• Reiniging
+• Peeling
+• Reinigende massage 
+• Onzuiverheden verwijderen 
+• Skin prep 
+• Acid Peel (verschillende beschikbaar)
+• Neutralisator
+• Eindverzorging
+• Solar skin shield SPF 30
 "
             ></treatment>
             <treatment
@@ -114,16 +128,15 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
               price="€80"
               time="75 mins"
               text="Ideaal voor de vochtarme huid, voor intensieve hydratatie. De cellen krijgen een energiestoot en het gebruik van de hydrolage verbetert de hydratatie van de huid en heeft een mooi liftend effect. Vochtrimpels verdwijnen en de huid wordt rozig, zacht en stralend.
-•	reiniging
-•	peeling
-•	doorbloeding stimulerend masker
-•	reinigende massage
-•	onzuiverheden verwijderen
-•	werkstoffenconcentraat
-•	Hydrolage (collageenvlies- & gipsmasker)
-•	serum
-•	Eindverzorging
-
+• Reiniging
+• Peeling
+• Doorbloeding stimulerend masker
+• Reinigende massage
+• Onzuiverheden verwijderen
+• Werkstoffenconcentraat
+• Hydrolage (collageenvlies- & gipsmasker)
+• Serum
+• Eindverzorging
 "
             ></treatment>
             <treatment
@@ -133,16 +146,16 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
               text="Microdermabrasie is een zéér effectieve behandelmethode voor huiden met specifieke problemen. In feite is microdermabrasie een mechanische superpeeling waarmee de bovenste huidlaag op een pijnloze manier wordt verwijderd en het lichaam wordt gestimuleerd tot de aanmaak van nieuwe en jonge huidcellen.
 (U kunt kiezen uit: een losse behandeling of een kuur van drie of zes behandelingen.)
 
-•	reiniging
-•	peeling
-•	doorbloeding stimulererend masker
-•	reinigende massage
-•	onzuiverheden verwijderen
-•	skin prep
-•	microdermabrasie
-•	serum
-•	masker
-•	eindverzorging
+• Reiniging
+• Peeling
+• Doorbloeding stimulererend masker
+• Reinigende massage
+• Onzuiverheden verwijderen
+• Skin prep
+• Microdermabrasie
+• Serum
+• Masker
+• Eindverzorging
 "
             ></treatment>
             <treatment
@@ -150,18 +163,17 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
               price="€125"
               time="90 mins"
               text="Microdermabrasie behandeling inclusief hydrolage voor vochtherstel en de stimulatie van de celregeneratie.
-•	reiniging
-•	peeling
-•	doorbloeding stimulerend masker
-•	reinigende massage 
-•	onzuiverheden verwijderen
-•	skin prep
-•	microdermabrasie
-•	werkstoffenconcentraat
-•	Hydrolage (collageenvlies- + gipsmasker)
-•	serum
-•	Eindverzorging
-
+• Reiniging
+• Peeling
+• Doorbloeding stimulerend masker
+• Reinigende massage 
+• Onzuiverheden verwijderen
+• Skin prep
+• Microdermabrasie
+• Werkstoffenconcentraat
+• Hydrolage (collageenvlies- + gipsmasker)
+• Serum
+• Eindverzorging
 "
             ></treatment>
             <treatment
@@ -169,16 +181,16 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
               price="€110"
               time="90 mins"
               text="Intensieve behandeling om de aanmaak van zuurstof in de huid te stimuleren. De               ideale behandeling als uw huid een oppepper nodig heeft. De huid wordt zacht, roze en krijgt een jeugdige uitstraling.
-•	reiniging
-•	peeling
-•	reinigende massage
-•	onzuiverheden verwijderen
-•	step I oxygen ( de huid wakker maken)
-•	step II (werkstoffen inmasseren)
-•	step III (diverse zuren zetten de huid aan het werk)
-•	hydrolage masker
-•	serum
-•	eindverzorging
+• Reiniging
+• Peeling
+• Reinigende massage
+• Onzuiverheden verwijderen
+• Step I oxygen ( de huid wakker maken)
+• Step II (werkstoffen inmasseren)
+• Step III (diverse zuren zetten de huid aan het werk)
+• Hydrolage masker
+• Serum
+• Eindverzorging
 "
             ></treatment>
             <treatment
@@ -187,17 +199,17 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
               time="100 mins"
               text="De oxygen treatment in combinatie met microdermabrasie en de hydrolage.
 
-•	reiniging
-•	peeling
-•	reinigende massage 
-•	onzuiverheden verwijderen
-•	skin prep
-•	microdermabrasie
-•	step II (werkstoffen inmasseren)
-•	step III (diverse zuren)
-•	hydrolage masker
-•	serum
-•	eindverzorging
+• Reiniging
+• Peeling
+• Reinigende massage 
+• Onzuiverheden verwijderen
+• Skin prep
+• Microdermabrasie
+• Step II (werkstoffen inmasseren)
+• Step III (diverse zuren)
+• Hydrolage masker
+• Serum
+• Eindverzorging
 "
             ></treatment>
             <treatment
@@ -206,17 +218,17 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
               time="90 mins"
               text="In combinatie met microdermabrasie is het een uitstekende behandeling om de huid te verfrissen en te revitaliseren. Ideaal voor pigmentstoornissen en acné-gepigmenteerde littekens.
 
-•	reiniging
-•	peeling
-•	doorbloeding stimulerend masker
-•	reinigende massage
-•	onzuiverheden verwijderen
-•	skin prep
-•	microdermabrasie
-•	acid peel ( meerdere beschikbaar) 
-•	neutralisator
-•	eindverzorging
-•	Solar skin shield SPF 30
+• Reiniging
+• Peeling
+• Doorbloeding stimulerend masker
+• Reinigende massage
+• Onzuiverheden verwijderen
+• Skin prep
+• Microdermabrasie
+• Acid peel ( meerdere beschikbaar) 
+• Neutralisator
+• Eindverzorging
+• Solar skin shield SPF 30
 "
             ></treatment>
           </div>
@@ -387,6 +399,7 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
 
 <style lang="scss">
   @import '../assets/css/variables.scss';
+
   .treatment {
     padding: 8px;
     min-height: 600px;
@@ -491,5 +504,9 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
 
   th {
     background-color: #f2f2f2;
+  }
+
+  h2.active-heading {
+    color: darken($brown, 10%);
   }
 </style>

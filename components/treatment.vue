@@ -15,11 +15,9 @@
     <transition name="slide">
       <div
         class="showhide__content"
-        :style="{ maxHeight: isOpen ? '300px' : '0' }"
+        :style="{ maxHeight: isOpen ? '600px' : '0' }"
       >
-        <p class="showhide__text">
-          {{ text }}
-        </p>
+        <p class="showhide__text" v-html="formattedText"></p>
       </div>
     </transition>
   </div>
@@ -53,6 +51,12 @@
       return {
         isOpen: false,
       };
+    },
+    computed: {
+      formattedText() {
+        // Convert line breaks to HTML breaks
+        return this.text ? this.text.replace(/\n/g, '<br>') : '';
+      },
     },
     methods: {
       toggleContent() {
@@ -106,7 +110,7 @@
     &__arrow {
       width: 30px;
       height: 30px;
-      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10l5 5 5-5"/></svg>');
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23847463" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10l5 5 5-5"/></svg>');
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -124,6 +128,7 @@
 
     &__text {
       margin: 0;
+      color: $brown;
     }
 
     &__arrow--up {
