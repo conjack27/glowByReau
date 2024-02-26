@@ -26,7 +26,7 @@
     <div class="treatment__content">
       <transition name="fade">
         <div
-          :key="selectedSection"
+          :key="'beauty'"
           class="treatment__section"
           v-show="selectedSection === 'beauty'"
         >
@@ -236,7 +236,7 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
       </transition>
       <transition name="fade">
         <div
-          :key="selectedSection"
+          :key="'brows'"
           class="treatment__section"
           v-show="selectedSection === 'brows'"
         >
@@ -318,7 +318,7 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
       </transition>
       <transition name="fade">
         <div
-          :key="selectedSection"
+          :key="'wax'"
           class="treatment__section"
           v-show="selectedSection === 'wax'"
         >
@@ -382,12 +382,15 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
 <script>
   import Treatment from '~/components/treatment.vue';
   export default {
+    mounted() {
+      console.log(this.$route);
+    },
     components: {
       Treatment,
     },
     data() {
       return {
-        selectedSection: 'beauty',
+        selectedSection: this.$route.query.section || 'beauty',
       };
     },
   };
@@ -400,6 +403,7 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
     padding: 8px;
     min-height: 600px;
     @media (min-width: 600px) {
+      padding-top: 114px;
       display: flex;
     }
     &__headings {
@@ -420,7 +424,7 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
 
     &__heading {
       cursor: pointer;
-      font-size: 24px;
+      font-size: 28px;
       text-transform: uppercase;
       text-align: center;
       color: $beige;

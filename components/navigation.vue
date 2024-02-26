@@ -24,18 +24,24 @@
         :class="{ 'nav__menu-items--open': isMenuOpen }"
       >
         <li class="nav__menu-item">
-          <NuxtLink class="nav__menu-link" to="about">About</NuxtLink>
+          <NuxtLink @click="closeMenu" class="nav__menu-link" to="about"
+            >About</NuxtLink
+          >
         </li>
         <li class="nav__menu-item">
-          <NuxtLink class="nav__menu-link" to="behandelingen"
+          <NuxtLink @click="closeMenu" class="nav__menu-link" to="behandelingen"
             >Behandelingen</NuxtLink
           >
         </li>
         <li class="nav__menu-item">
-          <NuxtLink class="nav__menu-link" to="producten">Producten</NuxtLink>
+          <NuxtLink @click="closeMenu" class="nav__menu-link" to="producten"
+            >Producten</NuxtLink
+          >
         </li>
         <li class="nav__menu-item">
-          <NuxtLink class="nav__menu-link" to="contact">Contact</NuxtLink>
+          <NuxtLink @click="closeMenu" class="nav__menu-link" to="contact"
+            >Contact</NuxtLink
+          >
         </li>
       </ul>
     </div>
@@ -53,6 +59,9 @@
     methods: {
       toggleMenu() {
         this.isMenuOpen = !this.isMenuOpen;
+      },
+      closeMenu() {
+        this.isMenuOpen = false;
       },
       handleScroll() {
         this.isScrolled = window.scrollY > 0;

@@ -51,6 +51,7 @@
 
     @media (min-width: 600px) {
       flex-direction: row;
+      align-items: flex-start;
     }
 
     &__hero {
@@ -61,7 +62,7 @@
       height: 300px;
 
       @media (min-width: 600px) {
-        height: 700px;
+        height: 94vh;
         flex: 0 1 50%;
       }
     }
@@ -75,7 +76,7 @@
       margin: 8px;
 
       @media (min-width: 600px) {
-        padding: 0 20px;
+        padding: 114px 20px 0 20px;
         flex: 0 1 50%;
       }
     }

@@ -15,8 +15,23 @@
         </div>
         <div class="contact__block">
           <h2 class="contact__heading">Locatie</h2>
-          <p class="contact__text">Gooise Kant 276,</p>
-          <p class="contact__text">1104 MM Amsterdam, Nederland</p>
+          <p class="contact__text">
+            <a
+              target="_blank"
+              class="contact__link"
+              href="https://maps.app.goo.gl/SsonetcbaPpqQWVS9"
+            >
+              Gooise Kant 276,
+            </a>
+          </p>
+          <p class="contact__text">
+            <a
+              target="_blank"
+              class="contact__link"
+              href="https://maps.app.goo.gl/SsonetcbaPpqQWVS9"
+              >1104 MM Amsterdam, Nederland</a
+            >
+          </p>
           <p class="contact__text">(Gratis parkeren)</p>
         </div>
       </div>
@@ -29,14 +44,29 @@
       </div>
       <div class="contact__block">
         <h2 class="contact__heading">Locatie</h2>
-        <p class="contact__text">Gooise Kant 276,</p>
-        <p class="contact__text">1104 MM Amsterdam, Nederland</p>
+        <p class="contact__text">
+          <a
+            target="_blank"
+            class="contact__link"
+            href="https://maps.app.goo.gl/SsonetcbaPpqQWVS9"
+          >
+            Gooise Kant 276,
+          </a>
+        </p>
+        <p class="contact__text">
+          <a
+            target="_blank"
+            class="contact__link"
+            href="https://maps.app.goo.gl/SsonetcbaPpqQWVS9"
+            >1104 MM Amsterdam, Nederland</a
+          >
+        </p>
         <p class="contact__text">(Gratis parkeren)</p>
       </div>
     </div>
     <div class="contact__content">
       <div class="contact__content-header" @click="toggleContent">
-        <h3 class="contact__content-heading">Annulerings voorwarde</h3>
+        <h3 class="contact__content-heading">Annulerings voorwaarde</h3>
         <i :class="['contact__arrow', { 'contact__arrow--up': isOpen }]"></i>
       </div>
       <transition name="slide">
@@ -186,7 +216,7 @@
 
     &__content {
       padding: 8px;
-      min-height: 300px;
+      min-height: 180px;
 
       @media (min-width: 600px) {
         padding: 0 200px;

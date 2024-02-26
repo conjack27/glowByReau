@@ -9,11 +9,13 @@
       <h1 class="home__heading">Enhancing the beauty you were born with</h1>
       <div class="home__links">
         <hr class="home__hr" />
-        <NuxtLink class="home__link" to="behandelingen">Brows</NuxtLink>
+
+        <p class="home__link" @click="goToBehandelingen('brows')">Brows</p>
         <hr class="home__hr" />
-        <NuxtLink class="home__link" to="behandelingen">Wax</NuxtLink>
+        <p class="home__link" @click="goToBehandelingen('wax')">Wax</p>
         <hr class="home__hr" />
-        <NuxtLink class="home__link" to="behandelingen">Beauty</NuxtLink>
+        <p class="home__link" @click="goToBehandelingen('beauty')">Beauty</p>
+
         <hr class="home__hr" />
       </div>
     </div>
@@ -52,6 +54,21 @@
   </div>
 </template>
 
+<script>
+  export default {
+    data() {
+      return {
+        selectedSection: this.$route.params.section || 'beauty',
+      };
+    },
+    methods: {
+      goToBehandelingen(section) {
+        this.$router.push({ name: 'behandelingen', query: { section } });
+      },
+    },
+  };
+</script>
+
 <style lang="scss">
   @import '../assets/css/variables.scss';
   .home {
@@ -71,7 +88,7 @@
       align-items: center;
 
       @media (min-width: 600px) {
-        padding-top: 7em;
+        padding-top: 114px;
         padding-bottom: 3em;
       }
     }
@@ -104,13 +121,16 @@
       color: white;
       font-family: Nunito Extra Light, sans-serif;
       font-weight: 100;
+      align-items: center;
     }
 
     &__link {
       color: white;
       text-decoration: none;
-      margin-left: 8px;
-      margin-right: 8px;
+      margin: 0 8px;
+      font-size: 24px;
+      cursor: pointer;
+      margin-top: 0;
 
       &:hover {
         text-decoration: underline;

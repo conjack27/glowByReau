@@ -25,6 +25,7 @@
           <p class="foot__contact-block-detail">
             <a
               class="foot__contact-block-detail-link"
+              target="_blank"
               href="mailto:robinruijs@gmail.com"
               >robinruijs@gmail.com</a
             >
@@ -32,9 +33,32 @@
         </div>
         <div class="foot__contact-block">
           <p class="foot__contact-block-heading">Adres</p>
-          <p class="foot__contact-block-detail">Gooisekant 276</p>
-          <p class="foot__contact-block-detail">1104 MM</p>
-          <p class="foot__contact-block-detail">Amsterdam</p>
+          <p class="foot__contact-block-detail">
+            <a
+              class="foot__contact-block-detail-link"
+              href="https://maps.app.goo.gl/SsonetcbaPpqQWVS9"
+            >
+              Gooisekant 276
+            </a>
+          </p>
+          <p class="foot__contact-block-detail">
+            <a
+              class="foot__contact-block-detail-link"
+              target="_blank"
+              href="https://maps.app.goo.gl/SsonetcbaPpqQWVS9"
+            >
+              1104 MM</a
+            >
+          </p>
+          <p class="foot__contact-block-detail">
+            <a
+              class="foot__contact-block-detail-link"
+              target="_blank"
+              href="https://maps.app.goo.gl/SsonetcbaPpqQWVS9"
+            >
+              Amsterdam</a
+            >
+          </p>
         </div>
       </div>
     </div>
@@ -49,11 +73,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 400px;
+    min-height: 300px;
     bottom: 0;
     background-color: $beige;
     opacity: 1;
     padding: 8px;
+    position: relative;
 
     @media (min-width: 600px) {
       // Add desktop styles here
@@ -65,6 +90,9 @@
       color: $brown;
       text-align: center;
       margin: 16px 0;
+
+      @media (min-width: 600px) {
+      }
     }
 
     &__blocks {
@@ -73,7 +101,7 @@
       align-items: center;
       flex-direction: row;
       width: 100%;
-      max-width: 800px;
+      max-width: 1200px;
       margin-top: 16px;
 
       @media (min-width: 600px) {
@@ -91,6 +119,7 @@
       margin-top: 27px;
 
       @media (min-width: 600px) {
+        margin-top: 10px;
       }
     }
 
@@ -102,7 +131,7 @@
     }
 
     &__link {
-      font-size: 24px;
+      font-size: 18px;
       text-transform: uppercase;
       font-family: Georgia, 'Times New Roman', Times, serif;
       color: $brown;
@@ -131,7 +160,7 @@
     }
 
     &__contact-block-heading {
-      font-size: 24px;
+      font-size: 18px;
       color: $brown;
       margin-bottom: 0px;
       text-transform: uppercase;
@@ -152,6 +181,22 @@
 
       &:hover {
         color: $white;
+      }
+    }
+
+    &__social-icon {
+      color: $brown;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      bottom: 50px;
+
+      &.instagram {
+        background-image: url('../assets/images/instagram.svg');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
       }
     }
   }

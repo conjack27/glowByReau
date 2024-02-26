@@ -9,6 +9,33 @@ export default defineNuxtConfig({
   router: {
     linkActiveClass: 'active',
   },
+  routes: [
+    {
+      name: 'home',
+      path: '/',
+      component: '~/pages/index.vue',
+    },
+    {
+      name: 'behandelingen',
+      path: '/behandelingen/:section?',
+      component: '~/pages/behandelingen.vue',
+    },
+    {
+      name: 'contact',
+      path: '/contact',
+      component: '~/pages/contact.vue',
+    },
+    {
+      name: 'about',
+      path: '/about',
+      component: '~/pages/about.vue',
+    },
+    {
+      name: 'producten',
+      path: '/producten',
+      component: '~/pages/producten.vue',
+    },
+  ],
   googleFonts: {
     families: {
       Georgia: true,
