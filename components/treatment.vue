@@ -52,6 +52,9 @@
         isOpen: false,
       };
     },
+    mounted() {
+      this.$emit('content-loaded');
+    },
     computed: {
       formattedText() {
         // Convert line breaks to HTML breaks

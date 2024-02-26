@@ -24,7 +24,7 @@
       </h2>
     </div>
     <div class="treatment__content">
-      <transition name="fade">
+      <div>
         <div
           :key="'beauty'"
           class="treatment__section"
@@ -233,8 +233,8 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
             ></treatment>
           </div>
         </div>
-      </transition>
-      <transition name="fade">
+      </div>
+      <div>
         <div
           :key="'brows'"
           class="treatment__section"
@@ -315,8 +315,8 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
             ></treatment>
           </div>
         </div>
-      </transition>
-      <transition name="fade">
+      </div>
+      <div>
         <div
           :key="'wax'"
           class="treatment__section"
@@ -374,7 +374,7 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
             </div>
           </div>
         </div>
-      </transition>
+      </div>
     </div>
   </div>
 </template>
@@ -392,6 +392,11 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
       return {
         selectedSection: this.$route.query.section || 'beauty',
       };
+    },
+    methods: {
+      contentLoaded() {
+        this.loading = false;
+      },
     },
   };
 </script>
