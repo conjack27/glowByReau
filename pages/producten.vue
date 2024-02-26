@@ -68,6 +68,10 @@
 
     &__content {
       padding: 8px;
+
+      @media (min-width: 600px) {
+        padding: 8px 10%;
+      }
     }
 
     &__heading {

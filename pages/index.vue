@@ -159,7 +159,6 @@
       align-items: center;
       margin-top: 1em;
       margin-bottom: 1em;
-      outline: 1px solid black;
 
       @media (min-width: 600px) {
         margin-top: 0;

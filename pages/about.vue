@@ -11,10 +11,9 @@
         schoonheidsspecialiste sinds 2007.
       </p>
       <p class="about__text">
-        Welkom op de site van Glow By Reau. Mijn naam is Robin Ruijs,
-        schoonheidsspecialiste sinds 2007. Na 17 jaar ben ik gestopt met mijn
-        salon in Amsterdam centrum en begon ik een nieuw hoofdstuk met mijn
-        thuissalon in Amsterdam-Zuidoost.
+        Mijn naam is Robin Ruijs, schoonheidsspecialiste sinds 2007. Na 17 jaar
+        ben ik gestopt met mijn salon in Amsterdam centrum en begon ik een nieuw
+        hoofdstuk met mijn thuissalon in Amsterdam-Zuidoost.
       </p>
       <p class="about__text">
         Als gecertificeerd skinexpert, wimper- en wenkbrauwstyliste help ik u
@@ -50,6 +49,10 @@
     flex-direction: column;
     align-items: center;
 
+    @media (min-width: 600px) {
+      flex-direction: row;
+    }
+
     &__hero {
       background-size: cover;
       background-position: center;
@@ -59,6 +62,7 @@
 
       @media (min-width: 600px) {
         height: 700px;
+        flex: 0 1 50%;
       }
     }
 
@@ -71,7 +75,8 @@
       margin: 8px;
 
       @media (min-width: 600px) {
-        padding: 0 10% 20px 10%;
+        padding: 0 20px;
+        flex: 0 1 50%;
       }
     }
 

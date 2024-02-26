@@ -30,7 +30,7 @@
           class="treatment__section"
           v-show="selectedSection === 'beauty'"
         >
-          <h2>Facials</h2>
+          <h2 class="treatment__section-heading">Facials</h2>
           <p class="treatment__section-intro">
             Bij alle gezichtsbehandelingen worden de producten aangepast op
             basis van jouw huidtype en wens!
@@ -240,7 +240,7 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
           class="treatment__section"
           v-show="selectedSection === 'brows'"
         >
-          <h2>Brows</h2>
+          <h2 class="treatment__section-heading">Wimpers en Wenkbrauen</h2>
           <p class="treatment__section-intro">
             Bij alle gezichtsbehandelingen worden de producten aangepast op
             basis van jouw huidtype en wens!
@@ -322,61 +322,57 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
           class="treatment__section"
           v-show="selectedSection === 'wax'"
         >
-          <h2>Wax</h2>
-          <table>
-            <tr>
-              <th>Behandeling</th>
-              <th>Prijs</th>
-            </tr>
-            <tr>
-              <td>Bovenlip of kin wax</td>
-              <td>€10</td>
-            </tr>
-            <tr>
-              <td>Bovenlip en kin wax</td>
-              <td>€18,50</td>
-            </tr>
-            <tr>
-              <td>Gezicht wax</td>
-              <td>€25</td>
-            </tr>
-            <tr>
-              <td>Oksel wax</td>
-              <td>€20</td>
-            </tr>
-            <tr>
-              <td>Onderarmen wax</td>
-              <td>€22,50</td>
-            </tr>
-            <tr>
-              <td>Armen wax</td>
-              <td>€30</td>
-            </tr>
-            <tr>
-              <td>Rug wax</td>
-              <td>€35</td>
-            </tr>
-            <tr>
-              <td>Bikinilijn wax</td>
-              <td>€20</td>
-            </tr>
-            <tr>
-              <td>Onder of boven-benen wax</td>
-              <td>€25</td>
-            </tr>
-            <tr>
-              <td>Brazilian wax</td>
-              <td>€32,50</td>
-            </tr>
-            <tr>
-              <td>Full Brazilian wax</td>
-              <td>€37 ,50</td>
-            </tr>
-            <tr>
-              <td>Benen wax</td>
-              <td>€40</td>
-            </tr>
-          </table>
+          <h2 class="treatment__section-heading">Wax</h2>
+          <div class="treatment__section-items">
+            <div class="treatment__section-item">
+              <p>Bovenlip of kin wax</p>
+              <p>€10</p>
+            </div>
+            <div class="treatment__section-item">
+              <p>Bovenlip en kin wax</p>
+              <p>€18,50</p>
+            </div>
+            <div class="treatment__section-item">
+              <p>Gezicht wax</p>
+              <p>€25</p>
+            </div>
+            <div class="treatment__section-item">
+              <p>Oksel wax</p>
+              <p>€20</p>
+            </div>
+            <div class="treatment__section-item">
+              <p>Onderarmen wax</p>
+              <p>€22,50</p>
+            </div>
+            <div class="treatment__section-item">
+              <p>Armen wax</p>
+              <p>€30</p>
+            </div>
+            <div class="treatment__section-item">
+              <p>Rug wax</p>
+              <p>€35</p>
+            </div>
+            <div class="treatment__section-item">
+              <p>Bikinilijn wax</p>
+              <p>€20</p>
+            </div>
+            <div class="treatment__section-item">
+              <p>Onder of boven-benen wax</p>
+              <p>€25</p>
+            </div>
+            <div class="treatment__section-item">
+              <p>Brazilian wax</p>
+              <p>€32,50</p>
+            </div>
+            <div class="treatment__section-item">
+              <p>Full Brazilian wax</p>
+              <p>€37,50</p>
+            </div>
+            <div class="treatment__section-item">
+              <p>Benen wax</p>
+              <p>€40</p>
+            </div>
+          </div>
         </div>
       </transition>
     </div>
@@ -417,7 +413,6 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
         flex-direction: column;
         width: 250px;
         min-width: 250px;
-        margin-top: 100px;
         justify-content: flex-start;
         align-items: flex-start;
       }
@@ -461,6 +456,7 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
       @media (min-width: 600px) {
         width: 100%;
         margin: 0;
+        padding-top: 20px;
       }
 
       &.fade-enter-active,
@@ -477,33 +473,40 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
     &__section-intro {
       color: $brown;
     }
-  }
 
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 20px;
-    @media (min-width: 600px) {
-      margin-left: 100px;
+    &__section-heading {
+      font-size: 24px;
+      color: $brown;
+      text-transform: uppercase;
     }
-  }
 
-  th {
-    font-weight: 400;
-    font-size: 18px;
-    color: $brown;
-  }
+    &__section-items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      padding: 8px;
+      @media (min-width: 600px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    }
 
-  th,
-  td {
-    border: 1px solid #ddd;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 8px;
-    text-align: left;
-  }
+    &__section-item {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 8px;
+      @media (min-width: 600px) {
+        flex: 0 1 30%;
+      }
 
-  th {
-    background-color: #f2f2f2;
+      p {
+        color: $brown;
+      }
+    }
   }
 
   h2.active-heading {
