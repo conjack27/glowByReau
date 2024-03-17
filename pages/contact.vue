@@ -2,14 +2,14 @@
   <div class="contact">
     <div
       class="contact__hero"
-      style="background-image: url('/images/test.avif')"
+      style="background-image: url('/images/Contact photo 1.jpg')"
     >
       <div class="contact__blocks contact__blocks--desktop">
         <div class="contact__block">
           <h2 class="contact__heading">Contact</h2>
           <p class="contact__text">T: +31 6 52344487</p>
-          <a href="mailto:robinruijs@gmail.com" class="contact__link"
-            >robinruijs@gmail.com</a
+          <a href="mailto:info@glowbyreau.nl" class="contact__link">
+            info@glowbyreau.nl</a
           >
           <p class="contact__text">&nbsp;</p>
         </div>
@@ -40,7 +40,7 @@
       <div class="contact__block">
         <h2 class="contact__heading">Contact</h2>
         <p class="contact__text">T: +31 6 52344487</p>
-        <p class="contact__text">robinruijs@gmail.com</p>
+        <p class="contact__text">info@glowbyreau.nl</p>
       </div>
       <div class="contact__block">
         <h2 class="contact__heading">Locatie</h2>

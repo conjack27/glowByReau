@@ -25,7 +25,7 @@
       >
         <li class="nav__menu-item">
           <NuxtLink @click="closeMenu" class="nav__menu-link" to="about"
-            >About</NuxtLink
+            >Over</NuxtLink
           >
         </li>
         <li class="nav__menu-item">
@@ -221,7 +221,7 @@
     }
 
     &__menu-link {
-      color: $brown;
+      color: #fff;
       text-decoration: none;
       font-size: 24px;
       text-transform: uppercase;

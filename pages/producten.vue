@@ -2,7 +2,7 @@
   <div class="product">
     <div
       class="product__hero"
-      style="background-image: url('/images/test.avif')"
+      style="background-image: url('/images/Product banner.jpg')"
     ></div>
     <div class="product__content">
       <h1 class="product__heading">Over Reviderm</h1>
@@ -31,17 +31,22 @@
       </p>
       <div class="product__images">
         <img
-          src="../assets/images/logo-small-black.png"
+          src="/images/Product little photo 4.jpg"
           alt="reviderm bottle"
           class="product__image"
         />
         <img
-          src="../assets/images/logo-small-black.png"
+          src="/images/product little foto.jpg"
           alt="reviderm bottle"
           class="product__image"
         />
         <img
-          src="../assets/images/logo-small-black.png"
+          src="/images/Product lttle photo 2.jpg"
+          alt="reviderm bottle"
+          class="product__image"
+        />
+        <img
+          src="/images/Product little photo 3.jpg"
           alt="reviderm bottle"
           class="product__image"
         />

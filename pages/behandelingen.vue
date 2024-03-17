@@ -106,19 +106,17 @@
 "
             ></treatment>
             <treatment
-              title="Acid Peel Treatment"
+              title="Acid peel treatment"
               price="€85"
               time="75 mins"
-              text="De hoornlaag wordt met deze behandeling verdund.
-Dode huidcellen verdwijnen en de huid krijgt een mooiere kleur. Er ontstaat een betere doorbloeding en opname van werkzame stoffen.
-De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De huid ziet er egaler en jonger uit met verfijnde poriën.
+              text="The stratum corneum is thinned with this treatment. Dead skin cells disappear and the skin takes on a more beautiful color. This results in better blood flow and absorption of active substances. The skin is lifted and tightened. Pigment spots become less visible. The skin looks smoother and younger with refined pores.
 • Reiniging
 • Peeling
-• Reinigende massage 
-• Onzuiverheden verwijderen 
-• Skin prep 
+• Skin prep
 • Acid Peel (verschillende beschikbaar)
 • Neutralisator
+• Serum
+• Masker
 • Eindverzorging
 • Solar skin shield SPF 30
 "
@@ -194,10 +192,10 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
 "
             ></treatment>
             <treatment
-              title="Wellness Lift treatment"
-              price="€140"
-              time="100 mins"
-              text="De oxygen treatment in combinatie met microdermabrasie en de hydrolage.
+              title="Ultimate Lift treatment"
+              price="€130"
+              time="90 mins"
+              text="De oxygen treatment in combinatie met microdermabrasie en de hydrolage. Voor de ultieme Glow Behandeling.
 
 • Reiniging
 • Peeling
@@ -220,13 +218,28 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
 
 • Reiniging
 • Peeling
-• Doorbloeding stimulerend masker
-• Reinigende massage
-• Onzuiverheden verwijderen
 • Skin prep
 • Microdermabrasie
-• Acid peel ( meerdere beschikbaar) 
+• Acid peel (meerdere beschikbaar) 
 • Neutralisator
+• Serum
+• Masker 
+• Eindverzorging
+• Solar skin shield SPF 30
+"
+            ></treatment>
+            <treatment
+              title="Micro-needling treatment "
+              price="€100"
+              time="45 mins"
+              text="De skinNeedler zorgt voor een trigger in de huid, waardoor er celvernieuwing gaat plaatsvinden en de aanmaak van collageen, elastine en hyaluronzuur wordt geactiveerd. Hierdoor is de SkinNeedler een effectief middel tegen rimpeltjes, huidverslapping en algehele huidveroudering.
+
+• Reiniging
+• Peeling
+• Skin prep
+• Formule aanbrengen 
+• Micro-needling
+• Herstellend masker
 • Eindverzorging
 • Solar skin shield SPF 30
 "
@@ -240,10 +253,10 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
           class="treatment__section"
           v-show="selectedSection === 'brows'"
         >
-          <h2 class="treatment__section-heading">Wimpers en Wenkbrauen</h2>
+          <h2 class="treatment__section-heading">Wimpers en Wenkbrauwen</h2>
           <p class="treatment__section-intro">
-            Bij alle gezichtsbehandelingen worden de producten aangepast op
-            basis van jouw huidtype en wens!
+            Laat mij u helpen om uw gezichtskenmerken in balans te brengen en uw
+            ogen meer te laten spreken!
           </p>
           <div class="treatment__treatments">
             <treatment
@@ -291,8 +304,8 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
               title="Brow Lift & Classic Brow"
               price="€55"
               time="60 mins"
-              :noExtraContent="true"
-              text=""
+              text="Tijdens deze behandeling worden de wenkbrauw haartjes in een andere positie gezet waardoor er optisch vollere wenkbrauwen gecreëerd worden en gaatjes in de wenkbrauwen worden gecamoufleerd. Ook zullen de haartjes worden geverfd, geëpileerd en/of gewaxt zodat de wenkbrauwen nog meer worden geaccentueerd.
+Het resultaat van deze behandeling zal gelifte wenkbrauwen geven in een mooie en strakke shape."
             ></treatment>
             <treatment
               title="Lash Tint"
@@ -310,8 +323,7 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
               title="Lash Lift & Tint"
               price="€50"
               time="60 mins"
-              :noExtraContent="true"
-              text=""
+              text="Lash lifting is een behandeling die de eigen wimpers lift en krult. Ook wordt er tijdens deze behandeling de wimpers geverfd waardoor ze nog meer op zullen vallen."
             ></treatment>
           </div>
         </div>
@@ -323,6 +335,10 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
           v-show="selectedSection === 'wax'"
         >
           <h2 class="treatment__section-heading">Wax</h2>
+          <p class="treatment__section-intro">
+            Ik ben gespecialiseerd in ontharing van gezicht en lichaam door
+            middel van waxen met Italwax!
+          </p>
           <div class="treatment__section-items">
             <div class="treatment__section-item">
               <p>Bovenlip of kin wax</p>

@@ -26,8 +26,8 @@
             <a
               class="foot__contact-block-detail-link"
               target="_blank"
-              href="mailto:robinruijs@gmail.com"
-              >robinruijs@gmail.com</a
+              href="mailto:info@glowbyreau.nl"
+              >info@glowbyreau.nl</a
             >
           </p>
         </div>
@@ -38,7 +38,7 @@
               class="foot__contact-block-detail-link"
               href="https://maps.app.goo.gl/SsonetcbaPpqQWVS9"
             >
-              Gooisekant 276
+              Gooise Kant 276
             </a>
           </p>
           <p class="foot__contact-block-detail">

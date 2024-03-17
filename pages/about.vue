@@ -2,7 +2,7 @@
   <div class="about">
     <div
       class="about__hero"
-      style="background-image: url('/images/test.avif')"
+      style="background-image: url('/images/About orbin phtoo.jpg')"
     ></div>
     <div class="about__content">
       <h1 class="about__heading">Over Glow By Reau</h1>
@@ -11,9 +11,8 @@
         schoonheidsspecialiste sinds 2007.
       </p>
       <p class="about__text">
-        Mijn naam is Robin Ruijs, schoonheidsspecialiste sinds 2007. Na 17 jaar
-        ben ik gestopt met mijn salon in Amsterdam centrum en begon ik een nieuw
-        hoofdstuk met mijn thuissalon in Amsterdam-Zuidoost.
+        Na 17 jaar ben ik gestopt met mijn salon in Amsterdam centrum en begon
+        ik een nieuw hoofdstuk met mijn thuissalon in Amsterdam-Zuidoost.
       </p>
       <p class="about__text">
         Als gecertificeerd skinexpert, wimper- en wenkbrauwstyliste help ik u
@@ -76,7 +75,7 @@
       margin: 8px;
 
       @media (min-width: 600px) {
-        padding: 114px 20px 0 20px;
+        padding: 114px 80px 0 80px;
         flex: 0 1 50%;
       }
     }

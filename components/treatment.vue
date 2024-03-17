@@ -53,7 +53,7 @@
       };
     },
     mounted() {
-      this.$emit('content-loaded');
+      // this.$emit('content-loaded');
     },
     computed: {
       formattedText() {

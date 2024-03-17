@@ -1,6 +1,9 @@
 <template>
   <div class="home">
-    <div class="home__hero" style="background-image: url('/images/test.avif')">
+    <div
+      class="home__hero"
+      style="background-image: url('/images/Homepage.jpg')"
+    >
       <img
         class="home__logo"
         src="../assets/images/logo-full-white.svg"
@@ -25,31 +28,39 @@
         <div class="home__content-block">
           <h3 class="home__content-block-heading">Beauty</h3>
           <p class="home__content-block-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor Risus commodo viverra maecenas accumsan lacus vel
-            facilisis.
+            Het brede scala aan behandelingen zorgt ervoor dat er voor iedere
+            huidwens en -conditie een passende behandeling is. Komt u er niet
+            helemaal uit welke behandeling voor u geschikt is? Laat u dan vooral
+            adviseren. Ik sta graag voor u klaar met een huidanalyse en
+            huidadvies. Uw huid, mijn zorg.
           </p>
         </div>
         <div class="home__content-block">
           <h3 class="home__content-block-heading">Brows & lashes</h3>
           <p class="home__content-block-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor Risus commodo viverra maecenas accumsan lacus vel
-            facilisis.
+            Wenkbrauwen zijn zeer bepalend voor uw gezicht, daarom is het zeker
+            de moeite waard om er extra aandacht aan te besteden. Er wordt samen
+            met u gekeken naar de juiste vorm en kleur die bij uw gezicht past.
           </p>
         </div>
         <div class="home__content-block">
           <h3 class="home__content-block-heading">Wax</h3>
           <p class="home__content-block-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor Risus commodo viverra maecenas accumsan lacus vel
-            facilisis.
+            Hairless is Careless. Want om eerlijk te zijn, helemaal niemand
+            houdt van scheren. Laat u daarom waxen met de fijne wax van Glow by
+            Reau. Zo bent u zeker van alle ongewenste haartjes af en kunt u
+            genieten van een stralende gladde huid.
           </p>
         </div>
       </div>
       <nuxtLink to="behandelingen" class="home__content-btn"
         >Alle behandelingen</nuxtLink
       >
+      <p class="home__content-cadeau">
+        Cadeaubon: Laat iemand anders eens stralen bij Glow by Reau beautysalon.
+        U kunt zelf het bedrag of de behandeling bepalen. De cadeaubonnen worden
+        leuk verpakt!
+      </p>
     </div>
   </div>
 </template>
@@ -214,6 +225,13 @@
       &:hover {
         opacity: 0.8;
       }
+    }
+
+    &__content-cadeau {
+      font-size: 16px;
+      color: #847463;
+      text-align: center;
+      padding: 0 20%;
     }
   }
 </style>
