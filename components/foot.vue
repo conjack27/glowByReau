@@ -62,7 +62,9 @@
         </div>
       </div>
     </div>
-    <i class="foot__social-icon instagram"></i>
+    <a href="https://www.instagram.com/glowbyreau/">
+      <i class="foot__social-icon instagram"></i>
+    </a>
   </footer>
 </template>
 

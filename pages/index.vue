@@ -38,9 +38,10 @@
         <div class="home__content-block">
           <h3 class="home__content-block-heading">Brows & lashes</h3>
           <p class="home__content-block-text">
-            Wenkbrauwen zijn zeer bepalend voor uw gezicht, daarom is het zeker
-            de moeite waard om er extra aandacht aan te besteden. Er wordt samen
-            met u gekeken naar de juiste vorm en kleur die bij uw gezicht past.
+            Wenkbrauwen en wimpers zijn zeer bepalend voor uw gezicht, daarom is
+            het zeker de moeite waard om er extra aandacht aan te besteden. Er
+            wordt samen met u gekeken naar de juiste vorm en kleur die bij uw
+            gezicht past.
           </p>
         </div>
         <div class="home__content-block">
@@ -174,7 +175,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
 
       @media (min-width: 600px) {
         margin: 3em 1em;

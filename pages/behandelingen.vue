@@ -49,7 +49,7 @@
 "
             ></treatment>
             <treatment
-              title="Basic"
+              title="Basic glow"
               price="€59"
               time="60 mins"
               text="• Reiniging
@@ -62,7 +62,7 @@
 "
             ></treatment>
             <treatment
-              title="Compleet"
+              title="Full glow"
               price="€75"
               time="90 mins"
               text="• Reiniging 

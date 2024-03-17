@@ -150,16 +150,18 @@
     &__block {
       display: flex;
       flex-direction: column;
+      background-color: rgba(119, 120, 95, 0.7);
+      padding: 50px;
 
       @media (min-width: 600px) {
-        padding: 0 200px;
+        margin: 0 200px;
       }
     }
 
     &__heading {
       font-family: Georgia, 'Times New Roman', Times, serif;
       text-transform: uppercase;
-      color: $brown;
+      color: $white;
       font-size: 38px;
       text-align: center;
 
