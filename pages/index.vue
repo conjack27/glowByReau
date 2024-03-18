@@ -23,7 +23,7 @@
       </div>
     </div>
     <div class="home__content page">
-      <h2 class="home__content-heading">Behandelingen</h2>
+      <h2 class="home__content-heading">Treatments</h2>
       <div class="home__content-blocks">
         <div class="home__content-block">
           <h3 class="home__content-block-heading">Beauty</h3>
@@ -59,9 +59,9 @@
       >
       <p class="home__content-cadeau">
         Cadeaubon: Laat iemand anders eens stralen bij Glow by Reau beautysalon.
-        U kunt zelf het bedrag of de behandeling bepalen. De cadeaubonnen worden
-        leuk verpakt!
+        U kunt zelf het bedrag of de behandeling bepalen.
       </p>
+      <p class="home__content-cadeau">De cadeaubonnen worden leuk verpakt!</p>
     </div>
   </div>
 </template>
@@ -232,6 +232,7 @@
       font-size: 16px;
       color: #847463;
       text-align: center;
+      margin: 0;
       padding: 0 20%;
     }
   }

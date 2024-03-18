@@ -215,7 +215,7 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
             ></treatment>
             <treatment
               title="Microdermabrasie en Acid peel treatment"
-              price="€135"
+              price="€120"
               time="90 min."
               text="In combinatie met microdermabrasie is het een uitstekende behandeling om de huid te verfrissen en te revitaliseren. Ideaal voor pigmentstoornissen en acné-gepigmenteerde littekens.
 
@@ -288,7 +288,7 @@ De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De hui
            geharst of geëpileerd en geknipt.
            Henna is fijn als u liever wilt verven zonder ammoniak of waterstofperoxide. Standaard      
             wenkbrauwverf  kleurt alleen de haartjes maar henna neemt zowel de haartjes als de huid mee.              
-           Henna zorgt voor een extra strak resultaat, waardoor u wenkbrauwen optisch voller lijken."
+           Henna zorgt voor een extra strak resultaat, waardoor uw wenkbrauwen optisch voller lijken."
             ></treatment>
             <treatment
               title="Brow Lift"
