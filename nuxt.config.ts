@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   styleResources: {
     scss: ['/assets/css/main.scss', '~/assets/css/fuckyou.scss'],
   },
+  link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   css: ['~/assets/css/main.scss'],
   router: {
     linkActiveClass: 'active',
