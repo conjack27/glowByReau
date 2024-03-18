@@ -33,13 +33,13 @@
           <h2 class="treatment__section-heading">Facials</h2>
           <p class="treatment__section-intro">
             Bij alle gezichtsbehandelingen worden de producten aangepast op
-            basis van jouw huidtype en wens!
+            basis van uw wensen en huidtype.
           </p>
           <div class="treatment__treatments">
             <treatment
               title="Mini glow"
               price="€45"
-              time="45 mins"
+              time="45 min."
               text="• Reiniging  
 • Peeling
 • Epileren/ waxen wenkbrauwen
@@ -51,7 +51,7 @@
             <treatment
               title="Basic glow"
               price="€59"
-              time="60 mins"
+              time="60 min."
               text="• Reiniging
 • Peeling
 • Reinigende massage
@@ -64,7 +64,7 @@
             <treatment
               title="Full glow"
               price="€75"
-              time="90 mins"
+              time="90 min."
               text="• Reiniging 
 • Peeling
 • Epileren/ waxen wenkbrauwen
@@ -79,7 +79,7 @@
             <treatment
               title="Men treatment"
               price="€65"
-              time="75 mins"
+              time="75 min."
               text="• Reiniging
 • Peeling
 • Reinigende massage 
@@ -91,9 +91,9 @@
 "
             ></treatment>
             <treatment
-              title="Detox"
+              title="Detox treatment"
               price="€65"
-              time="75 mins"
+              time="75 min."
               text="Een ontgiftende en zuiverende behandeling met behulp van zilverpoeder. Geschikt voor de onreine/acné huid.
 • Reiniging
 • Peeling
@@ -108,8 +108,11 @@
             <treatment
               title="Acid peel treatment"
               price="€85"
-              time="75 mins"
-              text="The stratum corneum is thinned with this treatment. Dead skin cells disappear and the skin takes on a more beautiful color. This results in better blood flow and absorption of active substances. The skin is lifted and tightened. Pigment spots become less visible. The skin looks smoother and younger with refined pores.
+              time="75 min."
+              text="De hoornlaag wordt met deze behandeling verdund.
+Dode huidcellen verdwijnen en de huid krijgt een mooiere kleur. Er ontstaat een betere doorbloeding en opname van werkzame stoffen.
+De huid wordt gelift en strakker. Pigmentvlekken worden minder zichtbaar. De huid ziet er egaler en jonger uit met verfijnde poriën.
+
 • Reiniging
 • Peeling
 • Skin prep
@@ -124,7 +127,7 @@
             <treatment
               title="Hydrolage treatment"
               price="€80"
-              time="75 mins"
+              time="75 min."
               text="Ideaal voor de vochtarme huid, voor intensieve hydratatie. De cellen krijgen een energiestoot en het gebruik van de hydrolage verbetert de hydratatie van de huid en heeft een mooi liftend effect. Vochtrimpels verdwijnen en de huid wordt rozig, zacht en stralend.
 • Reiniging
 • Peeling
@@ -138,9 +141,9 @@
 "
             ></treatment>
             <treatment
-              title="Microdermabrasie"
+              title="Microdermabrasie treatment"
               price="€105"
-              time="70 mins"
+              time="70 min."
               text="Microdermabrasie is een zéér effectieve behandelmethode voor huiden met specifieke problemen. In feite is microdermabrasie een mechanische superpeeling waarmee de bovenste huidlaag op een pijnloze manier wordt verwijderd en het lichaam wordt gestimuleerd tot de aanmaak van nieuwe en jonge huidcellen.
 (U kunt kiezen uit: een losse behandeling of een kuur van drie of zes behandelingen.)
 
@@ -157,9 +160,9 @@
 "
             ></treatment>
             <treatment
-              title="Celgeneratie treatment"
+              title="Anti-aging treatment"
               price="€125"
-              time="90 mins"
+              time="90 min."
               text="Microdermabrasie behandeling inclusief hydrolage voor vochtherstel en de stimulatie van de celregeneratie.
 • Reiniging
 • Peeling
@@ -177,7 +180,7 @@
             <treatment
               title="Oxygen treatment"
               price="€110"
-              time="90 mins"
+              time="90 min."
               text="Intensieve behandeling om de aanmaak van zuurstof in de huid te stimuleren. De               ideale behandeling als uw huid een oppepper nodig heeft. De huid wordt zacht, roze en krijgt een jeugdige uitstraling.
 • Reiniging
 • Peeling
@@ -194,7 +197,7 @@
             <treatment
               title="Ultimate Lift treatment"
               price="€130"
-              time="90 mins"
+              time="90 min."
               text="De oxygen treatment in combinatie met microdermabrasie en de hydrolage. Voor de ultieme Glow Behandeling.
 
 • Reiniging
@@ -213,7 +216,7 @@
             <treatment
               title="Microdermabrasie en Acid peel treatment"
               price="€135"
-              time="90 mins"
+              time="90 min."
               text="In combinatie met microdermabrasie is het een uitstekende behandeling om de huid te verfrissen en te revitaliseren. Ideaal voor pigmentstoornissen en acné-gepigmenteerde littekens.
 
 • Reiniging
@@ -231,7 +234,7 @@
             <treatment
               title="Micro-needling treatment "
               price="€100"
-              time="45 mins"
+              time="45 min."
               text="De skinNeedler zorgt voor een trigger in de huid, waardoor er celvernieuwing gaat plaatsvinden en de aanmaak van collageen, elastine en hyaluronzuur wordt geactiveerd. Hierdoor is de SkinNeedler een effectief middel tegen rimpeltjes, huidverslapping en algehele huidveroudering.
 
 • Reiniging
@@ -262,67 +265,66 @@
             <treatment
               title="Brow shaping"
               price="€15"
-              time="10 mins"
+              time="10 min."
               text="Waxen is een snelle ontharingsmethode om uw wenkbrauwen in de perfecte vorm te krijgen. U geniet van een langdurig resultaat want de haartjes worden met wortel en al verwijderd, waardoor ze ook nog eens dunner terugkomen. U kunt ook kiezen voor epileren i.p.v. waxen!"
             ></treatment>
             <treatment
               title="Basic Brow"
               price="€13,50"
-              time="10 mins"
+              time="10 min."
               text="Tijdens deze Basic Brow behandeling worden de wenkbrauw haartjes alleen geverfd. Resultaat zal een mooie natuurlijke look zijn."
             ></treatment>
             <treatment
               title="Classic Brow"
               price="€27"
-              time="20 mins"
+              time="20 min."
               text="Tijdens de  Classic Brow behandeling  worden de wenkbrauw haartjes geverfd, geëpilieerd of gewaxt  en geknipt."
             ></treatment>
             <treatment
               title="Henna Brow"
               price="€39,50"
-              time="30 mins"
+              time="40 min."
               text="Tijdens de henna Brow behandeling worden uw wenkbrauw haartjes geverfd met henna,       
            geharst of geëpileerd en geknipt.
            Henna is fijn als u liever wilt verven zonder ammoniak of waterstofperoxide. Standaard      
             wenkbrauwverf  kleurt alleen de haartjes maar henna neemt zowel de haartjes als de huid mee.              
-           Henna zorgt voor een extra strak resultaat, waardoor je wenkbrauwen optisch voller lijken."
+           Henna zorgt voor een extra strak resultaat, waardoor u wenkbrauwen optisch voller lijken."
             ></treatment>
             <treatment
               title="Brow Lift"
               price="€27,50"
-              time="30 mins"
+              time="30 min."
               text="Tijdens deze behandeling worden de wenkbrauw haartjes in een andere positie gezet waardoor er optisch vollere wenkbrauwen gecreëerd worden en gaatjes in de wenkbrauwen worden gecamoufleerd. Het resultaat van deze behandeling zal mooie gelifte wenkbrauwen geven."
             ></treatment>
             <treatment
               title="Brow Lift & Basic Brow"
               price="€42,50"
-              time="45 mins"
-              :noExtraContent="true"
-              text=""
+              time="45 min."
+              text="Tijdens deze behandeling worden de wenkbrauw haartjes in een andere positie gezet waardoor er optisch vollere wenkbrauwen gecreëerd worden en gaatjes in de wenkbrauwen worden gecamoufleerd. Ook zullen de haartjes worden geverfd zodat de wenkbrauwen nog meer worden geaccentueerd."
             ></treatment>
             <treatment
               title="Brow Lift & Classic Brow"
               price="€55"
-              time="60 mins"
+              time="60 min."
               text="Tijdens deze behandeling worden de wenkbrauw haartjes in een andere positie gezet waardoor er optisch vollere wenkbrauwen gecreëerd worden en gaatjes in de wenkbrauwen worden gecamoufleerd. Ook zullen de haartjes worden geverfd, geëpileerd en/of gewaxt zodat de wenkbrauwen nog meer worden geaccentueerd.
 Het resultaat van deze behandeling zal gelifte wenkbrauwen geven in een mooie en strakke shape."
             ></treatment>
             <treatment
               title="Lash Tint"
               price="€14,50"
-              time="15 mins"
+              time="15 min."
               text="Tijdens deze behandeling worden de natuurlijke wimpers geverfd. Dit zorgt voor een intensere blik zonder dat u make-up hoeft te gebruiken"
             ></treatment>
             <treatment
               title="Lash Lift"
               price="€37,50"
-              time="45 mins"
+              time="45 min."
               text="Lash lifting is een behandeling die de eigen wimpers lift en krult. Het is voor mensen die geen wimperextensions kunnen of willen dragen. Het blijft ongeveer 4 tot 6 weken zitten, u zult geen mascara of wimperkrultang meer nodig hebben. Lash lifting is onschadelijk voor de eigen wimpers!"
             ></treatment>
             <treatment
               title="Lash Lift & Tint"
               price="€50"
-              time="60 mins"
+              time="60 min."
               text="Lash lifting is een behandeling die de eigen wimpers lift en krult. Ook wordt er tijdens deze behandeling de wimpers geverfd waardoor ze nog meer op zullen vallen."
             ></treatment>
           </div>
