@@ -62,7 +62,20 @@
         U kunt zelf het bedrag of de behandeling bepalen.
       </p>
       <p class="home__content-cadeau">De cadeaubonnen worden leuk verpakt!</p>
+
+      <!-- <div
+        id="wahanda-online-booking-widget-iframe"
+        data-widget-url="https://widget.treatwell.nl/salon/432540/menu/"
+      ></div> -->
     </div>
+    <a
+      href="https://www.treatwell.nl/"
+      id="wahanda-online-booking-widget"
+      onclick='wahanda.openOnlineBookingWidget("https://widget.treatwell.nl/salon/432540/menu/"); return false;'
+      target="_blank"
+    >
+      <span>Boek nu!</span>
+    </a>
   </div>
 </template>
 
@@ -72,6 +85,24 @@
       return {
         selectedSection: this.$route.params.section || 'beauty',
       };
+    },
+    mounted() {
+      let treatwellScript = document.createElement('script');
+      treatwellScript.setAttribute(
+        'src',
+        'https://widget.treatwell.nl/common/venue-menu/javascript/widget-button.js?v1'
+      );
+      document.head.appendChild(treatwellScript);
+      // Create a link element
+      var link = document.createElement('link');
+      link.type = 'text/css';
+      link.href =
+        'https://widget.treatwell.nl/common/venue-menu/css/widget-button.css';
+      link.rel = 'stylesheet';
+      link.media = 'screen';
+
+      // Append the link element to the head of the document
+      document.getElementsByTagName('head')[0].appendChild(link);
     },
     methods: {
       goToBehandelingen(section) {
@@ -234,6 +265,18 @@
       text-align: center;
       margin: 0;
       padding: 0 20%;
+    }
+  }
+
+  #wahanda-online-booking-widget {
+    background: #77785f !important;
+    position: Fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 999999;
+
+    * {
+      color: white;
     }
   }
 </style>

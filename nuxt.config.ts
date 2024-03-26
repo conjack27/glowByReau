@@ -10,6 +10,25 @@ export default defineNuxtConfig({
   router: {
     linkActiveClass: 'active',
   },
+  head: {
+    // External script
+    script: [
+      {
+        src: 'https://widget.treatwell.nl/common/venue-menu/javascript/widget-button.js?v1',
+        async: true,
+        defer: true,
+      },
+    ],
+
+    // External stylesheet
+    link: [
+      {
+        rel: 'stylesheet',
+        href: 'https://widget.treatwell.nl/common/venue-menu/css/widget-button.css',
+        media: 'screen',
+      },
+    ],
+  },
   routes: [
     {
       name: 'home',
