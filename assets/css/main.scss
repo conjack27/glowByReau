@@ -1,0 +1,234 @@
+// Color variables
+
+$green: #77785f;
+$beige: #beb2a1;
+$grey: #deddd8;
+$white: #e7e6e2;
+$brown: #847463;
+
+// Add a class to the body element to make the page at least fit the view height of the screen
+body {
+  min-height: 100vh;
+  margin: 0;
+  max-width: 100%;
+  background-color: $white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// Add a class to the footer element to position it at the bottom of the screen
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+// Add a class to the menu element to position it at the top of the screen
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.content {
+  max-width: 1800px;
+  margin: 0 auto;
+  min-height: 600px;
+
+  @media (min-width: 600px) {
+  }
+}
+
+// Global margin and spacing styles
+$spacing-unit: 8px;
+
+// Margin utility classes
+@mixin margin($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  margin: $top $right $bottom $left;
+}
+
+.mt {
+  @include margin($spacing-unit, 0, 0, 0);
+}
+
+.mr {
+  @include margin(0, $spacing-unit, 0, 0);
+}
+
+.mb {
+  @include margin(0, 0, $spacing-unit, 0);
+}
+
+.ml {
+  @include margin(0, 0, 0, $spacing-unit);
+}
+
+.m {
+  @include margin($spacing-unit);
+}
+
+// Padding utility classes
+@mixin padding($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  padding: $top $right $bottom $left;
+}
+
+.pt {
+  @include padding($spacing-unit, 0, 0, 0);
+}
+
+.pr {
+  @include padding(0, $spacing-unit, 0, 0);
+}
+
+.pb {
+  @include padding(0, 0, $spacing-unit, 0);
+}
+
+.pl {
+  @include padding(0, 0, 0, $spacing-unit);
+}
+
+.p {
+  @include padding($spacing-unit);
+}
+// Global margin and spacing styles
+$spacing-unit: 8px;
+
+// Margin utility classes
+@mixin margin($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  margin: $top $right $bottom $left;
+}
+
+// Apply margin to all sides
+@mixin margin-all($value) {
+  @include margin($value, $value, $value, $value);
+}
+
+// Apply margin to horizontal sides
+@mixin margin-horizontal($value) {
+  @include margin(0, $value, 0, $value);
+}
+
+// Apply margin to vertical sides
+@mixin margin-vertical($value) {
+  @include margin($value, 0, $value, 0);
+}
+
+// Apply margin to top side
+@mixin margin-top($value) {
+  @include margin($value, 0, 0, 0);
+}
+
+// Apply margin to right side
+@mixin margin-right($value) {
+  @include margin(0, $value, 0, 0);
+}
+
+// Apply margin to bottom side
+@mixin margin-bottom($value) {
+  @include margin(0, 0, $value, 0);
+}
+
+// Apply margin to left side
+@mixin margin-left($value) {
+  @include margin(0, 0, 0, $value);
+}
+
+// Padding utility classes
+@mixin padding($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  padding: $top $right $bottom $left;
+}
+
+// Apply padding to all sides
+@mixin padding-all($value) {
+  @include padding($value, $value, $value, $value);
+}
+
+// Apply padding to horizontal sides
+@mixin padding-horizontal($value) {
+  @include padding(0, $value, 0, $value);
+}
+
+// Apply padding to vertical sides
+@mixin padding-vertical($value) {
+  @include padding($value, 0, $value, 0);
+}
+
+// Apply padding to top side
+@mixin padding-top($value) {
+  @include padding($value, 0, 0, 0);
+}
+
+// Apply padding to right side
+@mixin padding-right($value) {
+  @include padding(0, $value, 0, 0);
+}
+
+// Apply padding to bottom side
+@mixin padding-bottom($value) {
+  @include padding(0, 0, $value, 0);
+}
+
+// Apply padding to left side
+@mixin padding-left($value) {
+  @include padding(0, 0, 0, $value);
+}
+
+.main {
+  background-color: $white;
+}
+
+.page {
+  @include margin-all($spacing-unit);
+  @include padding-all($spacing-unit);
+}
+
+// Base styling for paragraphs and headings
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: $brown;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
