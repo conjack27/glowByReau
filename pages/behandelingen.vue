@@ -311,19 +311,19 @@ Het resultaat van deze behandeling zal gelifte wenkbrauwen geven in een mooie en
             ></treatment>
             <treatment
               title="Lash Tint"
-              price="€14,50"
+              price="€15"
               time="15 min."
               text="Tijdens deze behandeling worden de natuurlijke wimpers geverfd. Dit zorgt voor een intensere blik zonder dat u make-up hoeft te gebruiken"
             ></treatment>
             <treatment
               title="Lash Lift"
-              price="€37,50"
+              price="€40"
               time="45 min."
               text="Lash lifting is een behandeling die de eigen wimpers lift en krult. Het is voor mensen die geen wimperextensions kunnen of willen dragen. Het blijft ongeveer 4 tot 6 weken zitten, u zult geen mascara of wimperkrultang meer nodig hebben. Lash lifting is onschadelijk voor de eigen wimpers!"
             ></treatment>
             <treatment
               title="Lash Lift & Tint"
-              price="€50"
+              price="€52,50"
               time="60 min."
               text="Lash lifting is een behandeling die de eigen wimpers lift en krult. Ook wordt er tijdens deze behandeling de wimpers geverfd waardoor ze nog meer op zullen vallen."
             ></treatment>
