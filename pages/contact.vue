@@ -32,7 +32,6 @@
               >1104 MM Amsterdam, Nederland</a
             >
           </p>
-          <p class="contact__text">(Gratis parkeren)</p>
         </div>
       </div>
     </div>
@@ -61,7 +60,6 @@
             >1104 MM Amsterdam, Nederland</a
           >
         </p>
-        <p class="contact__text">(Gratis parkeren)</p>
       </div>
     </div>
     <div class="contact__content">
