@@ -7,7 +7,7 @@
       <img
         class="home__logo"
         src="../assets/images/logo-full-white.svg"
-        alt="Glow By Reau logo"
+        alt="Glow By Reau"
       />
       <h1 class="home__heading">Enhancing the beauty you were born with</h1>
       <div class="home__links">
